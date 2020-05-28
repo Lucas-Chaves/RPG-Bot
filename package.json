@@ -1,0 +1,24 @@
+{
+  "name": "rpg-bot",
+  "version": "1.0.0",
+  "description": "A simple bot for discord with some commands to play RPG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-Chaves/RPG-Bot.git"
+  },
+  "author": "Lucas Chaves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucas-Chaves/RPG-Bot/issues"
+  },
+  "homepage": "https://github.com/Lucas-Chaves/RPG-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.1.0"
+  }
+}
