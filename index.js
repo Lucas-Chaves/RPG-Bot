@@ -13,11 +13,11 @@ const TOKEN = process.env.TOKEN;
 
 bot.login(TOKEN);
 
-bot.on('ready', () => {
+bot.on('ready',async () => {
     console.info(`Logged in as ${bot.user.tag}!`);
   });
   
-  bot.on('message', msg => {
+  bot.on('message', async msg => {
     const args = msg.content.split(/ +/);
     const command = args.shift().toLowerCase();
     console.info(`Called command: ${command}`);
@@ -25,7 +25,7 @@ bot.on('ready', () => {
     if (!bot.commands.has(command)) return;
   
     try {
-      bot.commands.get(command).execute(msg, args);
+      await bot.commands.get(command).execute(msg, args);
     } catch (error) {
       console.error(error);
       msg.reply('there was an error trying to execute that command!');

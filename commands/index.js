@@ -1,4 +1,5 @@
 module.exports = {
-    Ping: require('./roll'),
+    roll: require('./roll'),
+    class: require('./classes'),
   };
   

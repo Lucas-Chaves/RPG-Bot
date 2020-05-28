@@ -1,20 +1,21 @@
+const {spell} = require('../controllers/index');
+
 module.exports = {
 	name: 'roll',
-	description: 'Ping!',
-	execute(msg, args) {
-		const roll = rollDice(args[0]);
-		console.log(args)
+	description: 'roll a dice!',
+	async execute(msg, args) {
+		const roll = await rollDice(args[0]);
 		msg.reply(roll)
 	},
-  }
+}
 
 
-const rollDice = (dice => {
+async function rollDice(dice) {
 	let rolls = []
 	let total = 0;
-	try{
+	console.log(dice)
+	try {
 		numbers = dice.split("d")
-		parseInt(numbers[0])
 		for (let index = 0; index < numbers[0]; index++) {
 			min = Math.ceil(1);
 			max = Math.floor(numbers[1]);
@@ -22,9 +23,10 @@ const rollDice = (dice => {
 			rolls.push(values)
 			total = total + values
 		}
-		console.log(dice)
+		if (rolls.length == 0) throw Error
 		return `\`${dice}\` = (${rolls.join("+")}) = ${total}`
-	}catch(e){
-		return 'error'
+	} catch (e) {
+		reply = await spell()
+		return reply
 	}
-});
+};
