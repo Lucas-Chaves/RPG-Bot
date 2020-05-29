@@ -18,8 +18,8 @@ async function rollDice(dice) {
 		numbers = dice.split("d")
 		for (let index = 0; index < numbers[0]; index++) {
 			min = Math.ceil(1);
-			max = Math.floor(numbers[1]);
-			values = Math.floor(Math.random() * (max - min)) + min
+			max = Math.floor(parseInt(numbers[1]));
+			values = Math.floor(Math.random() * (max - min + 1)) + min
 			rolls.push(values)
 			total = total + values
 		}
