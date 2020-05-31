@@ -4,7 +4,8 @@
   "description": "A simple bot for discord with some commands to play RPG",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "axios": "^0.19.2",
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
-    "eslint": "^7.1.0"
+    "eslint": "^7.1.0",
+    "nodemon": "^2.0.4"
   }
 }
