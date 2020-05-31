@@ -1,7 +1,7 @@
 const {classes} = require('../controllers/index')
 
 module.exports = {
-	name: 'class',
+	name: '.class',
 	description: 'Show class!',
 	async execute(msg, args) {
 		msgReply = await reply(args)

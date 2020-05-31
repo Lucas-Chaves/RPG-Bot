@@ -1,7 +1,7 @@
 const {spell} = require('../controllers/index');
 
 module.exports = {
-	name: 'roll',
+	name: '.roll',
 	description: 'roll a dice!',
 	async execute(msg, args) {
 		const roll = await rollDice(args[0]);
