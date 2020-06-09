@@ -14,7 +14,8 @@ Esse bot foi criado para ser utilizado de uma forma dinâmica e rápida para obt
 3. [Crie um bot](https://discord.com/developers) e pegue o Link para ele participar do seu Canal com permissão de leitura e escrita no Chat.
 4. Insira ele em algum canal com as devidas permissões.
 5. Pegue o Token(CHAVE_BOT_DISCORD) para poder utilizar o seu bot.
-6. Crie um arquivo chamado .env e coloque TOKEN=CHAVE_BOT_DISCORD
+6. Crie um arquivo chamado .env e coloque TOKEN=CHAVE_BOT_DISCORD  
+ex: ```TOKEN=ISHFAIWGYEHANDCSVIDJAD```
 7. ```npm run start``` para rodar a aplicação.
 8. use o bot com seus comandos.
 
