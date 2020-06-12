@@ -55,7 +55,7 @@ const classSpecified = async (args) => {
         \`\`\``
         return aboutClass
     } catch (e) {
-        return "erro ao soletrar spell, você virou um sapo"
+        return "erro ao soletrar classe, você virou é um sapo com 1/1"
     }
 }
 

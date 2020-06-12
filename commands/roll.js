@@ -26,7 +26,7 @@ async function rollDice(dice) {
 		if (rolls.length == 0) throw Error
 		return `\`${dice}\` = (${rolls.join("+")}) = ${total}`
 	} catch (e) {
-		reply = await spell()
+		reply = "Rode o dado de forma correta ou sua inteligencia é de Troll?!"
 		return reply
 	}
 };
